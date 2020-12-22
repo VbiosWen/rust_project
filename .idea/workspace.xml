@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="CMakeSettings">
     <configurations>
       <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" ENABLED="true" />
@@ -10,9 +13,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="82e2dfc9-0ded-4e24-bf6e-a422c0277e54" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/sorting/bubble_sort.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sorting/heap_sort.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sorting/mod.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/command/app_command.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/command/mod.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/leetcode_316.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/mod.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/util/mod.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/util/rand.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cargo.toml" beforeDir="false" afterPath="$PROJECT_DIR$/Cargo.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sorting/heap_sort.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/sorting/heap_sort.rs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,16 +55,22 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="cf.first.check.clang-format" value="false" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="org.rust.cargo.project.model.PROJECT_DISCOVERY" value="true" />
+    <property name="org.rust.disableDetachedFileInspection/Users/wenliujie/CLionProjects/rust_project/src/mod.rs" value="true" />
     <property name="org.rust.disableDetachedFileInspection/Users/wenliujie/CLionProjects/rust_project/src/sort/BubbleSort.rs" value="true" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.General" />
   </component>
-  <component name="RunManager" selected="Gradle./Users/wenliujie/CLionProjects/rust_project">
-    <configuration name="Test sorting::heap_sort::tests::empty" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
-      <option name="command" value="test --package rust_project --lib sorting::heap_sort::tests::empty -- --exact" />
+  <component name="RunManager" selected="Cargo.Test command::app_command::tests::test_app_command">
+    <configuration name="Test command::app_command::tests::test_app_command" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+      <option name="command" value="test --package rust_project --lib command::app_command::tests::test_app_command -- --exact" />
       <option name="workingDirectory" value="file://$PROJECT_DIR$" />
       <option name="channel" value="DEFAULT" />
       <option name="allFeatures" value="false" />
@@ -66,8 +83,50 @@
         <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test tests::internal" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
-      <option name="command" value="test --package rust_project --lib tests::internal -- --exact" />
+    <configuration name="Test float" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+      <option name="command" value="test --package rand --lib distributions::float" />
+      <option name="workingDirectory" value="file://$PROJECT_DIR$" />
+      <option name="channel" value="DEFAULT" />
+      <option name="allFeatures" value="false" />
+      <option name="emulateTerminal" value="false" />
+      <option name="backtrace" value="SHORT" />
+      <envs />
+      <option name="isRedirectInput" value="false" />
+      <option name="redirectInputPath" value="" />
+      <method v="2">
+        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test rand::tests" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+      <option name="command" value="test --package rust_project --lib util::rand::tests" />
+      <option name="workingDirectory" value="file://$PROJECT_DIR$" />
+      <option name="channel" value="DEFAULT" />
+      <option name="allFeatures" value="false" />
+      <option name="emulateTerminal" value="false" />
+      <option name="backtrace" value="SHORT" />
+      <envs />
+      <option name="isRedirectInput" value="false" />
+      <option name="redirectInputPath" value="" />
+      <method v="2">
+        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test util::rand::tests::test" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+      <option name="command" value="test --package rust_project --lib util::rand::tests::test -- --exact" />
+      <option name="workingDirectory" value="file://$PROJECT_DIR$" />
+      <option name="channel" value="DEFAULT" />
+      <option name="allFeatures" value="false" />
+      <option name="emulateTerminal" value="false" />
+      <option name="backtrace" value="SHORT" />
+      <envs />
+      <option name="isRedirectInput" value="false" />
+      <option name="redirectInputPath" value="" />
+      <method v="2">
+        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test util::rand::tests::test_rand_rang" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+      <option name="command" value="test --package rust_project --lib util::rand::tests::test_rand_rang -- --exact" />
       <option name="workingDirectory" value="file://$PROJECT_DIR$" />
       <option name="channel" value="DEFAULT" />
       <option name="allFeatures" value="false" />
@@ -94,40 +153,20 @@
         <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="GradleAppRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" PASS_PARENT_ENVS_2="true">
-      <method v="2">
-        <option name="com.jetbrains.cidr.cpp.gradle.execution.GradleNativeBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="/Users/wenliujie/CLionProjects/rust_project" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list />
-        </option>
-        <option name="vmOptions" value="" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle./Users/wenliujie/CLionProjects/rust_project" />
-        <item itemvalue="Cargo.Test sorting::heap_sort::tests::empty" />
-        <item itemvalue="Cargo.Test tests::internal" />
+        <item itemvalue="Cargo.Test command::app_command::tests::test_app_command" />
+        <item itemvalue="Cargo.Test util::rand::tests::test_rand_rang" />
+        <item itemvalue="Cargo.Test util::rand::tests::test" />
+        <item itemvalue="Cargo.Test rand::tests" />
+        <item itemvalue="Cargo.Test float" />
       </list>
     </recent_temporary>
   </component>
   <component name="RustProjectSettings">
+    <option name="runRustfmtOnSave" value="true" />
     <option name="toolchainHomeDirectory" value="$USER_HOME$/.cargo/bin" />
+    <option name="version" value="2" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -137,7 +176,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1608474294824</updated>
-      <workItem from="1608474297663" duration="1243000" />
+      <workItem from="1608474297663" duration="2790000" />
+      <workItem from="1608477246058" duration="9310000" />
+      <workItem from="1608521396119" duration="7402000" />
     </task>
     <servers />
   </component>
@@ -154,5 +195,21 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/sorting/heap_sort.rs</url>
+          <line>46</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

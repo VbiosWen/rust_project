@@ -1,5 +1,8 @@
 /// 堆排序
 pub fn heap_sort(arr: &mut [i32]) {
+    if arr.is_empty() {
+        return
+    }
     let end = arr.len();
     for start in (0..end / 2).rev() {
         sift_down(arr, start, end - 1);
@@ -33,6 +36,11 @@ fn sift_down(arr: &mut [i32], start: usize, end: usize) {
 #[cfg(test)]
 mod tests {
     use super::*;
+
+    #[test]
+    fn test(){
+        println!("{}",4);
+    }
 
     #[test]
     fn empty() {
